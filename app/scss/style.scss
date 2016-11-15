@@ -1,0 +1,37 @@
+// # primary Sass file
+@charset "UTF-8";
+
+// Config file and Sass variables
+@import "helpers/variables";
+
+// Helpers
+@import "helpers/functions";
+@import "helpers/helpers";
+@import "helpers/mixins";
+
+// Scaffolding
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+
+// Components
+@import "components/buttons"; 
+@import "components/navigation";
+
+// Layouts
+@import "layout/grid"; 
+@import "layout/header";
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/sidebar";
+
+// Pages
+@import "pages/home";
+@import "pages/contact";
+
+// Theme
+@import "themes/theme";
+
+// Vendor
+@import "vendors/slick-slider";
+

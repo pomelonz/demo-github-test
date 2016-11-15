@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block title %}
+		<title>Sanook</title>
+    {% endblock %}
+
+    {% block assets %}
+    <!--build:css cs/style.min.css -->
+    <link rel="stylesheet" href="cs/style.css">
+    <!--/build-->
+    {% endblock %}
+
+    </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        {% block header %}
+            {% include "../partials/_header.twig" %}
+        {% endblock %}
+
+        {% block main %}{% endblock %}
+
+        {% block footer %}
+            {% include "../partials/_footer.twig" %}
+        {% endblock %}
+
+        {% block scripts %}
+            <script src="js/main.js"></script>
+    	{% endblock %}
+    </body>
+</html>
